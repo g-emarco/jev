@@ -19,7 +19,7 @@ Press `s` for speaker notes.
 Copy `.env.example` to `.env`. Set `TYPESAFE_API_KEY`, and either use Vertex AI with Application Default
 Credentials (set `GOOGLE_CLOUD_PROJECT`; location must be `global` for Gemini 4 Argon) or a `GOOGLE_API_KEY`.
 
-    PYTHONPATH=examples uv run --env-file .env python examples/jev/01_classifier_basics.py
+    uv run --env-file .env python examples/jev/01_classifier_basics.py
 
 | Script | Shows |
 |---|---|
@@ -42,7 +42,7 @@ Credentials (set `GOOGLE_CLOUD_PROJECT`; location must be `global` for Gemini 4 
 - Gemini's safety filter often refuses risky tool calls itself, so `04_auto_mode.py` also feeds the
   gate synthetic tool calls to show Jev's risk classification directly.
 - `langchain-typesafe` is a pre-release (`0.0.1a3`); its middleware is experimental.
-- Model IDs live in `examples/jev_demo/models.py`; several Gemini models retire soon.
+- Model IDs live in `jev_demo/models.py`; several Gemini models retire soon.
 
 ## Research
 

@@ -51,7 +51,7 @@ Rule of thumb: **use an LLM to decide what to do, an engine to compute the answe
 - Preview model IDs can be deprecated on short notice
 - Gemini API and Vertex model lists differ
 
-Keep model ids in **one module** (`examples/jev_demo/models.py`) and put the dates in a calendar.
+Keep model ids in **one module** (`jev_demo/models.py`) and put the dates in a calendar.
 
 ---
 

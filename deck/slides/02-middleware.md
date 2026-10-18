@@ -77,7 +77,7 @@ agent = create_agent(FAST, tools=[read_file, delete_file],
 
 ## Custom: classify first, spend later
 
-`examples/jev_demo/triage.py`
+`jev_demo/triage.py`
 
 ```python
 class OffTopicGuard(AgentMiddleware):

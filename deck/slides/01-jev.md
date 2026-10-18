@@ -60,7 +60,7 @@ Include an `other` label so the model has somewhere to put what you did not anti
 
 ## From probabilities to policy
 
-`examples/jev_demo/gating.py`
+`jev_demo/gating.py`
 
 ```python
 def decide(response, *, min_confidence=0.7, urgent_at=0.8, outage_at=1.5):
