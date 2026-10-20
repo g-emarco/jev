@@ -8,7 +8,7 @@ from jev_demo.models import ARGON_ID
 
 load_dotenv()
 
-client = genai.Client()  # reads GOOGLE_API_KEY
+client = genai.Client(vertexai=True)  # ADC; project/location from GOOGLE_CLOUD_PROJECT/LOCATION
 response = client.models.generate_content(
     model=ARGON_ID,
     contents="Is Gemini 2.5 Flash still available on Vertex AI? Answer yes or no, then cite.",

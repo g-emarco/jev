@@ -16,8 +16,8 @@ Press `s` for speaker notes.
 
 ## Run the examples (live)
 
-Copy `.env.example` to `.env`. Set `TYPESAFE_API_KEY`, and either use Vertex AI with Application Default
-Credentials (set `GOOGLE_CLOUD_PROJECT`; location must be `global` for Gemini 4 Argon) or a `GOOGLE_API_KEY`.
+Copy `.env.example` to `.env`. Set `TYPESAFE_API_KEY`. Gemini runs on Vertex AI with Application Default
+Credentials (`gcloud auth application-default login`); set `GOOGLE_CLOUD_PROJECT` (location defaults to `global`, required for Gemini 4 Argon).
 
     uv run --env-file .env python examples/jev/01_classifier_basics.py
 

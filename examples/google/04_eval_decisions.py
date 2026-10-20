@@ -21,7 +21,7 @@ DATASET = [
 LABELS = ("infra", "billing", "other")
 
 jev = TypeSafeClassifier()
-gemini = ChatGoogleGenerativeAI(model=ARGON_ID, temperature=0).with_structured_output(
+gemini = ChatGoogleGenerativeAI(model=ARGON_ID, vertexai=True, temperature=0).with_structured_output(
     {"title": "Team", "type": "object", "properties": {"team": {"enum": list(LABELS)}}, "required": ["team"]}
 )
 

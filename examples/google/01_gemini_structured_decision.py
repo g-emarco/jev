@@ -17,7 +17,7 @@ class TicketDecision(BaseModel):
     reason: str = Field(description="One sentence justifying the choice.")
 
 
-model = ChatGoogleGenerativeAI(model=ARGON_ID, temperature=0)
+model = ChatGoogleGenerativeAI(model=ARGON_ID, vertexai=True, temperature=0)
 decider = model.with_structured_output(TicketDecision)
 
 decision = decider.invoke("Checkout returns 500 for every customer since the 14:00 deploy.")
