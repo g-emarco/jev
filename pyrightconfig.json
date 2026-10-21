@@ -1,0 +1,5 @@
+{
+  "include": ["jev_demo", "examples", "tests"],
+  "venvPath": ".",
+  "venv": ".venv"
+}
